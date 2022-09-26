@@ -1,0 +1,14 @@
+.texto-clarito{
+    color: rgba(155, 157, 158, 0.855);
+}
+
+.contenedor-cards{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+}
+
+.asd{
+    width: 10px;
+}
