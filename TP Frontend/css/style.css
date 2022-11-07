@@ -119,3 +119,76 @@ span{
     align-items: center;
     justify-content: center;
 }
+
+/*--------------------------Tickets tipo------------------------------*/
+
+.ticket-contenedor{
+    margin: 2rem 20%;
+}
+
+.ticket-tipo{
+    display:flex;
+    flex-direction: row;
+    gap:.5rem;
+}
+
+.ticket{
+    border: .2rem solid rgb(87, 167, 191);
+    text-align: center;
+    padding: .7rem;
+    width: calc(100vw - 40vw - 1rem);
+}
+
+.amarillo{
+    border-color: rgba(255, 255, 0, 0.729);
+}
+
+.ticket_porcentaje{
+    font-weight: bold;
+}
+
+.ticket_footer{
+    font-weight: 100;
+}
+
+/*--------------------------Tickets formulario------------------------------*/
+.ticket-formulario_subtitulo{
+    font-size: small;
+    text-align: center;
+    padding: .5rem 0;
+    margin:0;
+}
+
+.ticket-formulario_titulo{
+    margin:0 !important;
+    text-align: center;
+}
+
+.ticket_total{
+    background-color: rgb(179, 202, 210);
+    padding: 1rem 0 !important;
+    margin:0;
+    border-radius: .5rem;
+    color:rgb(45, 88, 158);
+}
+
+.tickt_total-texto{
+    margin:0;
+    padding-left:1rem;
+}
+
+#ticket_precio{
+    margin:0;
+    border:none;
+}
+
+.boton{ 
+    width: calc((100vw - 40vw - 1rem)/2);
+    background-color: rgb(97, 199, 97) !important;
+    border:none !important;
+}
+
+.invalido{
+    background-color: rgb(224, 89, 89) !important;
+    color: white !important;
+}

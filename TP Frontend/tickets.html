@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS only -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+
+    <body>
+      <div class="header">
+        <div>
+          <a class="inicio" href="/">
+            <img src="img/codoacodo.png" class="logo">
+            Conf Bs As
+          </a>
+        </div>
+        <div class="header-contenedor">
+          <a class="naveg" href="#">La conferencia</a>
+          <a class="naveg" href="#">Los oradores</a>
+          <a class="naveg" href="#">Lugar y fecha</a>
+          <a class="naveg" href="#">Conviertete en orador</a>
+          <a class="verde naveg" href="#">Comprar tickets</a>
+        </div>
+      </div>
+
+      <div class="ticket-contenedor">
+
+        <div class="ticket-tipo">
+          <div class="ticket">
+            <h3 class="ticket_titulo">Estudiante</h3>
+            <p class="ticket_subtitulo">Tiene un descuento</p>
+            <p class="ticket_porcentaje">80%</p>
+            <p class="ticket_footer">* presentar documentación</p>
+          </div>
+          <div class="ticket">
+            <h3 class="ticket_titulo">Trainee</h3>
+            <p class="ticket_subtitulo">Tiene un descuento</p>
+            <p class="ticket_porcentaje">50%</p>
+            <p class="ticket_footer">* presentar documentación</p>
+          </div>
+          <div class="ticket amarillo">
+            <h3 class="ticket_titulo">Junior</h3>
+            <p class="ticket_subtitulo">Tiene un descuento</p>
+            <p class="ticket_porcentaje">15%</p>
+            <p class="ticket_footer">* presentar documentación</p>
+          </div>
+        </div>
+
+        <form class="row g-3">
+          <h3 class="ticket-formulario_subtitulo">VENTA</h3>
+          <h1 class="ticket-formulario_titulo">VALOR DE TICKET $200</h1>
+          <div class="col-md-6">
+            <input placeholder="Nombre" type="text" class="form-control" id="ticket_nombre">
+          </div>
+          <div class="col-md-6">
+            <input placeholder="Apellido" type="text" class="form-control" id="ticket_apellido">
+          </div>
+          <div class="col-12">
+            <input type="email" class="form-control" id="ticket_email" placeholder="Correo">
+          </div>
+          
+          <div class="col-md-6">
+            <label for="ticket_cantidad" class="form-label">Cantidad</label>
+            <input min="0" placeholder="Cantidad" type="number" class="form-control" id="ticket_cantidad">
+          </div>
+          <div class="col-md-6">
+            <label for="ticket_categoria" class="form-label">Categoría</label>
+            <select id="ticket_categoria" class="form-select">
+              <option value="0" selected disabled>--Seleccione--</option>
+              <option value="80">Estudiante</option>
+              <option value="50">Trainee</option>
+              <option value="15">Junior</option>
+            </select>
+          </div>
+
+          <div class="ticket_total">
+            <p class="tickt_total-texto">Total a Pagar: $<span id="ticket_precio"></span></p>
+          </div>
+         
+          <div class="col-12">
+            <button id="boton_borrar" type="button" class="btn btn-primary btn-lg boton">Borrar</button>
+            <button id="boton_resumen" type="button" class="btn btn-primary btn-lg boton">Resumen</button>
+          </div>
+        </form>
+
+      </div>
+
+
+      <div class="footer">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="color" href="#">Preguntas<br>Frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="color" href="#">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="color" href="#">Prensa</a>
+          </li>
+          <li class="nav-item">
+            <a class="color" href="#">Conferencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="alinear color" href="#">Terminos y<br>condiciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="color" href="#">Privacidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="color" href="#">Estudiantes </a>
+          </li>          
+        </ul>
+      </div>
+    </body>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</html>
