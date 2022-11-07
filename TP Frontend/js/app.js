@@ -20,10 +20,7 @@ function Borrar(){
     const categoria = document.querySelector('#ticket_categoria');
     const total = document.querySelector('#ticket_precio');
 
-    nombre.classList.remove("invalido");
-    apellido.classList.remove("invalido");
-    email.classList.remove("invalido");
-    cantidad.classList.remove("invalido");
+    ResetearValido();
 
     nombre.value = "";
     apellido.value = "";
@@ -50,11 +47,7 @@ function Resumen(){
 }
 
 function ControlDatos(nombre,apellido,email,cantidad,categoria){
-    nombre.classList.remove("invalido");
-    apellido.classList.remove("invalido");
-    email.classList.remove("invalido");
-    cantidad.classList.remove("invalido");
-    categoria.classList.remove("invalido");
+    ResetearValido();
 
     let control = 1;
     if(nombre.value===""){
@@ -86,4 +79,18 @@ function ControlDatos(nombre,apellido,email,cantidad,categoria){
     }
 
     return control;
+}
+
+function ResetearValido(){
+    const nombre = document.querySelector('#ticket_nombre');
+    const apellido = document.querySelector('#ticket_apellido');
+    const email = document.querySelector('#ticket_email');
+    const cantidad = document.querySelector('#ticket_cantidad');
+    const categoria = document.querySelector('#ticket_categoria');
+
+    nombre.classList.remove("invalido");
+    apellido.classList.remove("invalido");
+    email.classList.remove("invalido");
+    cantidad.classList.remove("invalido");
+    categoria.classList.remove("invalido");
 }
